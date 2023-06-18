@@ -6,6 +6,9 @@
   /* padding: 20px; */
   }
 
+  /* .PostList__searchResult {
+    max-width: 250px; 
+  } */
 
 .PostList__searchInput {
     /* width: 100%; */
@@ -71,7 +74,7 @@
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 5px 5px;
     transition: background-color 0.3s ease;
   }
   
@@ -110,6 +113,19 @@
   @media screen and (max-width: 768px) {
     .PostList__postItem {
       flex-basis: calc(50% - 20px);
+    }
+
+    .PostList__pagination {
+      flex-wrap: wrap;
+      overflow: auto;
+      justify-content: flex-start;
+    }
+  
+    .PostList__pageButton button {
+      flex: 0 0 calc(20% - 0.5rem);
+      max-width: calc(20% - 0.5rem);
+      text-align: center;
+      margin: 5px 5px;
     }
   }
   

@@ -87,7 +87,7 @@ const PostList = () => {
 {currentPosts.length > 0 ? (
       <ul className="PostList__postList">
         {currentPosts.map((post) => (
-          <li className="PostList__postItem" key={post.id}>
+          <li className={`${currentPosts.length === 1 || 2 ? 'PostList__searchResult' : ''} PostList__postItem`} key={post.id}>
             <h3 className="PostList__postTitle">{post.title}</h3>
             <p className="PostList__postBody">{post.body}</p>
           </li>
