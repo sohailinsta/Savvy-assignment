@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# SpaceX Launch Programs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application that displays information about posts. Users can filter the posts based on title or body parameter.
 
-## Available Scripts
+## Project Approach
 
-In the project directory, you can run:
+The project was developed using a component-based approach with React, a popular JavaScript library for building user interfaces. The main components include:
 
-### `npm start`
+1. postList: The main component that fetches and displays the posts data, handles filtering based on title or body parameter, and implements pagination.
+2. postList.test.js: component that represents information about each test cases implemented using jest library.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project follows the following steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Fetching Data: The project uses the Axios library to make HTTP requests to the posts API and retrieve the post data.
+2. Data Filtering: Users can filter the posts by selecting a specific title or body. The filtered data is updated in real-time, and the pagination is reset accordingly.
+3. Pagination: To enhance the user experience and improve performance, the pages are paginated, with a specified number of cards displayed per page.
+4. Responsive Design: The user interface is designed to be responsive and adapt to different screen sizes and devices using CSS media queries.
+5. jest: This project includes unit tests to verify the correctness of various components and functionalities. The tests are written using the Jest testing framework, which is widely used for testing JavaScript applications.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project utilizes the following technologies and libraries:
 
-### `npm run build`
+1. React: A JavaScript library for building user interfaces.
+2. Axios: A popular HTTP client for making API requests.
+3. CSS: Cascading Style Sheets for styling the components and creating the layout.
+4. GitHub: Version control and code repository for managing the project's source code.
+5. netlify: A feature of netlify that allows hosting the project and making it accessible online.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository: git clone https://github.com/sohailinsta/Savvy-assignment
+2. Navigate to the project directory: cd Savvy-assignment
+3. Install dependencies: npm install
+4. Start the development server: npm start
+5. Open your browser and visit: http://localhost:3000
+The project should now be up and running on your local machine.
 
-### `npm run eject`
+To run the project test cases, follow these command:
+npx jest
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Developer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. This project was developed by Sohail Khan, a professional MERN stack developer with expertise in building web applications. Sohail has a strong background in JavaScript, React, Node.js, and MongoDB, and has successfully delivered several projects in the field of web development.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. With a passion for creating intuitive and user-friendly interfaces, Sohail brings a meticulous approach to software development, ensuring clean and efficient code practices. By leveraging the power of the MERN stack (MongoDB, Express.js, React, and Node.js), Sohail is able to build scalable and robust applications.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Connect with Sohail Khan on:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. GitHub: https://github.com/sohailinsta?tab=repositories
+2. inkedIn: https://www.linkedin.com/in/sohail-khan-617a40166
