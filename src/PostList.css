@@ -1,0 +1,121 @@
+.PostList {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+  /* padding: 20px; */
+  }
+
+
+.PostList__searchInput {
+    /* width: 100%; */
+    width: 80%;
+  max-width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .PostList__searchInput:focus {
+    outline: none;
+  }
+  
+  
+  .PostList__postList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin: 0;
+  }
+
+  .PostList__postItem {
+    background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .PostList__postTitle {
+    /* margin: 0; */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    /* margin-bottom: 10px; */
+  }
+  
+  .PostList__postBody {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555555;
+  }
+  
+  .PostList__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+  .PostList__pageButton {
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .PostList__pageButton:hover {
+    color: #e0e0e0;
+  }
+
+  .PostList__pageButton.active {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .PostList__Developer {
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .PostList__error {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .PostList__noPosts {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .PostList__postItem {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .PostList__postItem {
+      flex-basis: 100%;
+    }
+  }
+  
